@@ -20,6 +20,7 @@ const TextArea = styled.textarea`
   font-family: 'Source Code Pro', monospace;
   flex-grow: 1;
   display: block;
+  border: 1px solid gainsboro;
 `;
 
 export default Code;
