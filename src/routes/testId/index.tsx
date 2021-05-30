@@ -25,6 +25,11 @@ const TestId = () => {
     setTestedCode(code);
   };
 
+  const handleReset = () => {
+    setCode(data.defaultCode);
+    setTestedCode('');
+  }
+
   return (
     <div>
       <Column gap={10} mt="10px">
@@ -32,7 +37,7 @@ const TestId = () => {
         <Code value={code} onChange={handleCodeChange} />
         <Row gap={10}>
           <PrimaryButton onClick={handleTest}>테스트 하기</PrimaryButton>
-          <PrimaryButton>다시 작성하기</PrimaryButton>
+          <PrimaryButton onClick={handleReset}>다시 작성하기</PrimaryButton>
         </Row>
         <p>결과</p>
         <CodeTester

@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
+import Column from '../../components/box/Column';
 import datas from '../testId/datas';
 
 const Test = () => {
   return (
     <div>
-      <ul>
+      <Column gap={10} mt="10px">
         {datas.map(data => {
           return (
             <li key={data.id}>
@@ -12,7 +13,7 @@ const Test = () => {
             </li>
           )
         })}
-      </ul>
+      </Column>
     </div>
   );
 };
