@@ -24,7 +24,7 @@ const TestId = () => {
     } else {
       setCode(data.defaultCode);
     }
-  }, [data.defaultCode]);
+  }, [data.defaultCode, id]);
 
   const handleCodeChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setCode(event.target.value);
