@@ -21,12 +21,12 @@ const Test = () => {
 
   return (
     <div>
-      <Column mt="10px">
+      <Column gap={10} mt="10px">
         {datas.map((data) => {
-          if (passeds[data.id]) {
+          if (passeds['test-' + data.id]) {
             return (
               <Item key={data.id}>
-                <CheckBoxIcon style={{ fontSize: '20px', color: 'green' }} />
+                <CheckBoxIcon style={{ fontSize: '20px', color: 'green', marginRight: '5px' }} />
                 <Link to={`/test/${data.id}`}>{data.question}</Link>
               </Item>
             );
@@ -34,7 +34,7 @@ const Test = () => {
             return (
               <Item key={data.id}>
                 <CheckBoxOutlineBlankIcon
-                  style={{ fontSize: '20px', color: 'dimgrey' }}
+                  style={{ fontSize: '20px', color: 'dimgrey', marginRight: '5px' }}
                 />
                 <Link to={`/test/${data.id}`}>{data.question}</Link>
               </Item>

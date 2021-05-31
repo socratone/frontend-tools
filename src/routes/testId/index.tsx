@@ -18,7 +18,12 @@ const TestId = () => {
   const [data] = datas.filter((data) => String(data.id) === id);
 
   useEffect(() => {
-    setCode(data.defaultCode);
+    const savedCode = localStorage.getItem(`test-${id}`);
+    if (savedCode) {
+      setCode(savedCode);
+    } else {
+      setCode(data.defaultCode);
+    }
   }, [data.defaultCode]);
 
   const handleCodeChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -27,6 +32,7 @@ const TestId = () => {
 
   const handleTestClick = () => {
     setTestedCode(code);
+    localStorage.setItem(`test-${id}`, code);
   };
 
   const handleResetClick = () => {
@@ -49,7 +55,7 @@ const TestId = () => {
           <PrimaryButton onClick={handleResetClick}>다시 작성하기</PrimaryButton>
         </Row>
         <SubTitle size={18}>결과</SubTitle>
-        <CodeTester code={testedCode} tests={data.tests} />
+        <CodeTester code={testedCode} tests={data.tests} questionId={data.id} />
         <Row>
           <SubTitle size={18}>힌트</SubTitle>
           <RotateIconButton size="small" onClick={handleHintClick} style={{ transform: hintClicked ? 'rotate(180deg)': 'rotate(0deg)' }}>

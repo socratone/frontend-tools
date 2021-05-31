@@ -6,6 +6,7 @@ type CodeTesterProps = {
     message: string;
     if: string;
   }[];
+  questionId: string
 };
 
 const preScriptCode = `<!DOCTYPE html>
@@ -32,7 +33,7 @@ const postScriptCode = `
   </html>
 `;
 
-const CodeTester = ({ code: functionCode, tests }: CodeTesterProps) => {
+const CodeTester = ({ code: functionCode, tests, questionId }: CodeTesterProps) => {
   const testItems = tests.reduce((acc, test) => {
     return (
       acc +
@@ -62,6 +63,15 @@ const CodeTester = ({ code: functionCode, tests }: CodeTesterProps) => {
       div.classList.add('green');
       div.textContent = '모든 테스트를 통과했습니다.';
       document.body.append(div);
+
+      let passedsString = localStorage.getItem('passeds');
+      if (!passedsString) {
+        localStorage.setItem('passeds', '{}');
+        passedsString = '{}'
+      }
+      const passeds = JSON.parse(passedsString);
+      passeds['test-' + '${questionId}'] = true;
+      localStorage.setItem('passeds', JSON.stringify(passeds))
     }
   `;
 
