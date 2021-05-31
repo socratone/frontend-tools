@@ -14,8 +14,11 @@ const preScriptCode = `<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      div {
-        color: red;
+      .red {
+        color: #ff5722;
+      }
+      .green {
+        color: #8bc34a;
       }
     </style>
   </head>
@@ -34,37 +37,49 @@ const CodeTester = ({ code: functionCode, tests }: CodeTesterProps) => {
     return (
       acc +
       `if (${test.if}) {
+        passCount++;
+      } else {
         document.body.insertAdjacentHTML('beforeend', 
-          '<div>${test.message}</div>');
-      }`
+          '<div class="red">${test.message}</div>');
+      }
+      `
     );
   }, '');
 
   const testCode = `
+    let passCount = 0;
+
     try {
       ${testItems}
     } catch (error) {
       const div = document.createElement('div');
+      div.classList.add('red');
       div.textContent = error.message;
+      document.body.append(div);
+    }
+    if (passCount >= ${tests.length}) {
+      const div = document.createElement('div');
+      div.classList.add('green');
+      div.textContent = '모든 테스트를 통과했습니다.';
       document.body.append(div);
     }
   `;
 
   if (functionCode.length === 0) {
-    return null
+    return <Iframe title="code-tester" />;
   }
 
   return (
-    <StyledIframe
+    <Iframe
       title="code-tester"
       srcDoc={preScriptCode + functionCode + testCode + postScriptCode}
     />
   );
 };
 
-const StyledIframe = styled.iframe`
+const Iframe = styled.iframe`
   width: 100%;
   border: 1px solid gainsboro;
-`
+`;
 
 export default CodeTester;

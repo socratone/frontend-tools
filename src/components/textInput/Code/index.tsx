@@ -11,7 +11,7 @@ const Code = ({ value, onChange }: CodeProps) => {
   const codeRef = useRef<HTMLTextAreaElement>(null);
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLTextAreaElement>) => {
-    if (event.key == 'Tab' && codeRef.current) {
+    if (event.key === 'Tab' && codeRef.current) {
       event.preventDefault();
       const start = codeRef.current.selectionStart;
       const end = codeRef.current.selectionEnd;
@@ -35,7 +35,6 @@ const Code = ({ value, onChange }: CodeProps) => {
         value={value}
         onChange={onChange}
         onKeyDown={handleKeyDown}
-        autoFocus
       />
     </Box>
   );

@@ -1,39 +1,43 @@
-import { Box, IconButton } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 import styled from 'styled-components';
 import HomeIcon from '@material-ui/icons/Home';
-import BookIcon from '@material-ui/icons/Book';
-import PaletteIcon from '@material-ui/icons/Palette';
 import MenuIcon from '@material-ui/icons/Menu';
-import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
 import NavItem from './NavItem';
+import { useState } from 'react';
+import SideNav from '../SideNav';
 
 const Nav = () => {
+  const [openBars, setOpenBars] = useState(false);
+
+  const handleBarsClick = () => {
+    setOpenBars(true);
+  };
+
+  const handleBarsClose = () => {
+    setOpenBars(false);
+  }
+
   return (
-    <Container>
-      <LinkList>
-        <NavItem link="/" icon={<HomeIcon />}>
-          홈
-        </NavItem>
-        <NavItem
-          link="https://thinkforthink.tistory.com/"
-          icon={<BookIcon />}
-          iconSize={17}
+    <>
+      <Container>
+        <LinkList>
+          <NavItem link="/">
+            <HomeIcon style={{ fontSize: '18px' }} />
+          </NavItem>
+          <NavItem link="https://thinkforthink.tistory.com/">Blog</NavItem>
+          <NavItem link="/test">Test</NavItem>
+          <NavItem link="/color-keywords">Color Keywords</NavItem>
+        </LinkList>
+        <Box
+          display="flex"
+          onClick={handleBarsClick}
+          style={{ cursor: 'pointer' }}
         >
-          블로그
-        </NavItem>
-        <NavItem link="/test" icon={<FitnessCenterIcon />}>
-          Test
-        </NavItem>
-        <NavItem link="/color-keywords" icon={<PaletteIcon />}>
-          Color Keywords
-        </NavItem>
-      </LinkList>
-      <Box>
-        <IconButton>
-          <MenuIcon />
-        </IconButton>
-      </Box>
-    </Container>
+          <MenuIcon style={{ fontSize: '20px', color: 'dimgrey' }} />
+        </Box>
+      </Container>
+      {openBars && <SideNav onClose={handleBarsClose} />}
+    </>
   );
 };
 
@@ -51,7 +55,7 @@ const LinkList = styled.ul`
   display: flex;
 
   & > * {
-    margin-right: 12px;
+    margin-right: 20px;
   }
 
   & > *:last-child {

@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-type NavItemProps = {
+type SideNavItemProps = {
   link: string;
   children: React.ReactNode;
 };
 
-const NavItem = ({ link, children }: NavItemProps) => {
+const SideNavItem = ({ link, children }: SideNavItemProps) => {
   const isExternalLink = () => {
     if (link.indexOf('http') === -1) return false;
     return true;
@@ -32,6 +32,7 @@ const NavItem = ({ link, children }: NavItemProps) => {
 const Container = styled.div`
   display: flex;
   align-items: center;
+  margin-bottom: 8px;
 
   & a {
     color: dimgray;
@@ -41,4 +42,4 @@ const Container = styled.div`
   }
 `;
 
-export default NavItem;
+export default SideNavItem;

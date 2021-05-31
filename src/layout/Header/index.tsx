@@ -9,7 +9,7 @@ const Header = ({ children }: HeaderProps) => {
 };
 
 const Container = styled.header`
-  height: 60px;
+  height: 40px;
   border-bottom: 1px solid gainsboro;
 `;
 
