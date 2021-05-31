@@ -4,6 +4,7 @@ const datas = [
     category: 'basic',
     title: 'sum',
     question: 'a와 b를 더하는 sum 함수를 만드세요.',
+    rate: 1,
     defaultCode: `function sum(a, b) {
 
 }`,
@@ -19,6 +20,7 @@ const datas = [
     category: 'basic',
     title: 'subtract',
     question: 'a에서 b를 빼는 subtract 함수를 만드세요.',
+    rate: 1,
     defaultCode: `function subtract(a, b) {
 
 }`,
