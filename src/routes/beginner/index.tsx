@@ -1,8 +1,12 @@
+import { Link } from "react-router-dom";
+import Column from "../../components/box/Column"
+
 const Beginner = () => {
   return (  
     <div>
-      코딩 테스트
-      beginner
+      <Column mt="10px">
+        <Link to="/beginner/coding-test">코딩 테스트</Link>
+      </Column>
     </div>
   );
 }

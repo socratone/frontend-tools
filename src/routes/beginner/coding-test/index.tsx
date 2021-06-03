@@ -4,7 +4,7 @@ import CheckBoxIcon from '@material-ui/icons/CheckBox';
 import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
 import Column from '../../../components/box/Column';
 import { Item } from './styles';
-import datas from '../../testId/datas';
+import datas from './id/datas';
 import Stars from '../../../components/icon/Stars';
 
 const Test = () => {
@@ -36,7 +36,9 @@ const Test = () => {
                     marginRight: '5px',
                   }}
                 />
-                <Link to={`/test/${data.id}`}>{data.question}</Link>
+                <Link to={`/beginner/coding-test/${data.id}`}>
+                  {data.question}
+                </Link>
                 <Stars count={data.rate} />
               </Item>
             );
@@ -50,7 +52,9 @@ const Test = () => {
                     marginRight: '5px',
                   }}
                 />
-                <Link to={`/test/${data.id}`}>{data.question}</Link>
+                <Link to={`/beginner/coding-test/${data.id}`}>
+                  {data.question}
+                </Link>
               </Item>
             );
           }

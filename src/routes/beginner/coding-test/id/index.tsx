@@ -1,14 +1,14 @@
 import { useParams } from 'react-router';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-import PrimaryButton from '../../components/button/PrimaryButton';
-import Row from '../../components/box/Row';
+import PrimaryButton from '../../../../components/button/PrimaryButton';
+import Row from '../../../../components/box/Row';
 import React, { useEffect, useState } from 'react';
-import Code from '../../components/textInput/Code';
-import CodeTester from '../../components/tester/CodeTester';
-import Column from '../../components/box/Column';
+import Code from '../../../../components/textInput/Code';
+import CodeTester from '../../../../components/tester/CodeTester';
+import Column from '../../../../components/box/Column';
 import { RotateIconButton } from './styles';
 import datas from './datas';
-import SubTitle from '../../components/typography/SubTitle';
+import SubTitle from '../../../../components/typography/SubTitle';
 
 const TestId = () => {
   const { id } = useParams<{ id: string }>();
