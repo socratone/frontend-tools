@@ -26,6 +26,7 @@ const Nav = () => {
           </NavItem>
           <NavItem link="https://thinkforthink.tistory.com/">Blog</NavItem>
           <NavItem link="/beginner">Beginner</NavItem>
+          <NavItem link="/tools">Tools</NavItem>
           <NavItem link="/palette">Palette</NavItem>
         </LinkList>
         <Box
