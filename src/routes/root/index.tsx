@@ -16,7 +16,7 @@ const Root = () => {
     >
       <img
         src="https://picsum.photos/400"
-        alt="random image"
+        alt="random"
         style={{ maxWidth: '300px', borderRadius: '50%' }}
       />
       <div style={{ textAlign: 'center', lineHeight: 1.8 }}>

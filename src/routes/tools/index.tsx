@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import BarListItem from '../../components/listItem/BarListItem';
-import InboxIcon from '@material-ui/icons/Inbox';
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 import GradientIcon from '@material-ui/icons/Gradient';
 import ExtensionIcon from '@material-ui/icons/Extension';
