@@ -31,7 +31,7 @@ const SideNav = ({ onClose }: SideNavProps) => {
           Blog
         </SideNavItem>
         <SideNavItem link="/test">Test</SideNavItem>
-        <SideNavItem link="/color-keywords">Color Keywords</SideNavItem>
+        <SideNavItem link="/palette">Palette</SideNavItem>
       </Container>
     </ClickAwayListener>
   );
