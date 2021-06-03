@@ -4,9 +4,10 @@ import Tooltip from '@material-ui/core/Tooltip';
 type CopiableColorProps = {
   color: string;
   width: number;
+  onCopy?: (value: string) => void;
 };
 
-const CopiableColor = ({ color, width }: CopiableColorProps) => {
+const CopiableColor = ({ color, width, onCopy }: CopiableColorProps) => {
   const copyClipboard = (value: string) => {
     const textarea = document.createElement('textarea');
     textarea.textContent = value;
@@ -14,6 +15,7 @@ const CopiableColor = ({ color, width }: CopiableColorProps) => {
     textarea.select();
     document.execCommand('copy');
     textarea.remove();
+    if (onCopy) onCopy(value);
   };
 
   const handleClick = () => {

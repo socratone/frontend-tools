@@ -30,7 +30,7 @@ const SideNav = ({ onClose }: SideNavProps) => {
         <SideNavItem link="https://thinkforthink.tistory.com/">
           Blog
         </SideNavItem>
-        <SideNavItem link="/test">Test</SideNavItem>
+        <SideNavItem link="/beginner">Beginner</SideNavItem>
         <SideNavItem link="/palette">Palette</SideNavItem>
       </Container>
     </ClickAwayListener>

@@ -25,7 +25,7 @@ const Nav = () => {
             <HomeIcon style={{ fontSize: '18px' }} />
           </NavItem>
           <NavItem link="https://thinkforthink.tistory.com/">Blog</NavItem>
-          <NavItem link="/test">Test</NavItem>
+          <NavItem link="/beginner">Beginner</NavItem>
           <NavItem link="/palette">Palette</NavItem>
         </LinkList>
         <Box
@@ -53,6 +53,7 @@ const Container = styled.nav`
 
 const LinkList = styled.ul`
   display: flex;
+  height: 100%;
 
   & > * {
     margin-right: 20px;

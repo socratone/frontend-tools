@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import CheckBoxIcon from '@material-ui/icons/CheckBox';
 import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
-import Column from '../../components/box/Column';
+import Column from '../../../components/box/Column';
 import { Item } from './styles';
-import datas from '../testId/datas';
-import Stars from '../../components/icon/Stars';
+import datas from '../../testId/datas';
+import Stars from '../../../components/icon/Stars';
 
 const Test = () => {
   const [passeds, setPasseds] = useState<{
