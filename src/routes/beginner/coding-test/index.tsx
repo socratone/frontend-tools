@@ -55,6 +55,7 @@ const Test = () => {
                 <Link to={`/beginner/coding-test/${data.id}`}>
                   {data.question}
                 </Link>
+                <Stars count={data.rate} />
               </Item>
             );
           }
