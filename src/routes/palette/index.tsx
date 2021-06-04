@@ -23,7 +23,7 @@ const Palette = () => {
   return (
     <div>
       <Title>
-        <PaletteIcon style={{ fontSize: '19px' }} />
+        <PaletteIcon/>
         <span>붉은색 계열</span>
       </Title>
       <Colors>
@@ -32,7 +32,7 @@ const Palette = () => {
         ))}
       </Colors>
       <Title>
-        <PaletteIcon style={{ fontSize: '19px' }} />
+        <PaletteIcon/>
         <span>푸른색 계열</span>
       </Title>
       <Colors>
@@ -41,7 +41,7 @@ const Palette = () => {
         ))}
       </Colors>
       <Title>
-        <PaletteIcon style={{ fontSize: '19px' }} />
+        <PaletteIcon/>
         <span>회색 계열</span>
       </Title>
       <Colors>
