@@ -15,7 +15,7 @@ import BurstModeIcon from '@material-ui/icons/BurstMode';
 import WallpaperIcon from '@material-ui/icons/Wallpaper';
 import TimelineIcon from '@material-ui/icons/Timeline';
 import CodeIcon from '@material-ui/icons/Code';
-import ItemsAccordion from '../../components/accordion/ItemsAccordion';
+import ItemsAccordion from '../../components/accordion/TitleAccordion';
 import Column from '../../components/box/Column';
 
 const Tools = () => {

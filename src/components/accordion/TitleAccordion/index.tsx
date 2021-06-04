@@ -6,14 +6,14 @@ import {
   StyledAccordionDetails,
 } from './styles';
 
-type ItemsAccordionProps = {
+type TitleAccordionProps = {
   title: string;
   gap?: number;
   defaultExpanded?: boolean;
   children: React.ReactNode;
 };
 
-const ItemsAccordion = ({ title, gap, defaultExpanded = true, children }: ItemsAccordionProps) => {
+const TitleAccordion = ({ title, gap, defaultExpanded = true, children }: TitleAccordionProps) => {
   return (
     <div>
       <StyledAccordion defaultExpanded={defaultExpanded}>
@@ -29,4 +29,4 @@ const ItemsAccordion = ({ title, gap, defaultExpanded = true, children }: ItemsA
   );
 };
 
-export default ItemsAccordion;
+export default TitleAccordion;
