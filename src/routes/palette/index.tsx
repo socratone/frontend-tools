@@ -22,28 +22,19 @@ const Palette = () => {
 
   return (
     <div>
-      <Title>
-        <PaletteIcon/>
-        <span>붉은색 계열</span>
-      </Title>
+      <Title>붉은색 계열</Title>
       <Colors>
         {redColors.map((color, i) => (
           <CopiableColor key={i} color={color} width={30} onCopy={handleCopy} />
         ))}
       </Colors>
-      <Title>
-        <PaletteIcon/>
-        <span>푸른색 계열</span>
-      </Title>
+      <Title>푸른색 계열</Title>
       <Colors>
         {blueColors.map((color, i) => (
           <CopiableColor key={i} color={color} width={30} onCopy={handleCopy} />
         ))}
       </Colors>
-      <Title>
-        <PaletteIcon/>
-        <span>회색 계열</span>
-      </Title>
+      <Title>회색 계열</Title>
       <Colors>
         {greyColors.map((color, i) => (
           <CopiableColor key={i} color={color} width={30} onCopy={handleCopy} />
