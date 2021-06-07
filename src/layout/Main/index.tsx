@@ -15,7 +15,7 @@ const Main = ({ children }: MainProps) => {
 const Container = styled.main`
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px 20px 20px;
 `
  
 export default Main;
