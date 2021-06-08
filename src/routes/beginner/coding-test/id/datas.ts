@@ -2,7 +2,7 @@ const datas = [
   {
     id: 'basic-1',
     category: 'basic',
-    title: 'sum',
+    title: 'sum 함수',
     question: 'a와 b를 더하는 sum 함수를 만드세요.',
     rate: 1,
     defaultCode: `function sum(a, b) {
@@ -18,7 +18,7 @@ const datas = [
   {
     id: 'basic-2',
     category: 'basic',
-    title: 'subtract',
+    title: 'subtract 함수',
     question: 'a에서 b를 빼는 subtract 함수를 만드세요.',
     rate: 1,
     defaultCode: `function subtract(a, b) {
@@ -34,7 +34,7 @@ const datas = [
   {
     id: 'basic-3',
     category: 'basic',
-    title: 'getGrade',
+    title: "'수우미양가'를 return하는 getGrade 함수",
     question: "90 이상일 때 '수', 80 이상일 때 '우', 70 이상일 때 '미', 60 이상일 때 '양', 나머지는 '가'를 return하는 함수를 만드세요.",
     rate: 2,
     defaultCode: `function getGrade(number) {

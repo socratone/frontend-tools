@@ -39,7 +39,7 @@ const Test = () => {
                     }}
                   />
                   <Link to={`/beginner/coding-test/${data.id}`}>
-                    {data.question}
+                    {data.title}
                   </Link>
                   <Stars count={data.rate} />
                 </Item>
@@ -55,7 +55,7 @@ const Test = () => {
                     }}
                   />
                   <Link to={`/beginner/coding-test/${data.id}`}>
-                    {data.question}
+                    {data.title}
                   </Link>
                   <Stars count={data.rate} />
                 </Item>
