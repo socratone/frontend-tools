@@ -6,6 +6,7 @@ import Column from '../../../components/box/Column';
 import { Item } from './styles';
 import datas from './id/datas';
 import Stars from '../../../components/icon/Stars';
+import TitleAccordion from '../../../components/accordion/TitleAccordion';
 
 const Test = () => {
   const [passeds, setPasseds] = useState<{
@@ -23,45 +24,47 @@ const Test = () => {
   }, []);
 
   return (
-    <div>
-      <Column gap={10} mt="10px">
-        {datas.map((data) => {
-          if (passeds['test-' + data.id]) {
-            return (
-              <Item key={data.id}>
-                <CheckBoxIcon
-                  style={{
-                    fontSize: '20px',
-                    color: 'green',
-                    marginRight: '5px',
-                  }}
-                />
-                <Link to={`/beginner/coding-test/${data.id}`}>
-                  {data.question}
-                </Link>
-                <Stars count={data.rate} />
-              </Item>
-            );
-          } else {
-            return (
-              <Item key={data.id}>
-                <CheckBoxOutlineBlankIcon
-                  style={{
-                    fontSize: '20px',
-                    color: 'dimgrey',
-                    marginRight: '5px',
-                  }}
-                />
-                <Link to={`/beginner/coding-test/${data.id}`}>
-                  {data.question}
-                </Link>
-                <Stars count={data.rate} />
-              </Item>
-            );
-          }
-        })}
-      </Column>
-    </div>
+    <Column mt="10px" gap={10}>
+      <TitleAccordion title="기본">
+        <Column gap={10} mt="10px">
+          {datas.map((data) => {
+            if (passeds['test-' + data.id]) {
+              return (
+                <Item key={data.id}>
+                  <CheckBoxIcon
+                    style={{
+                      fontSize: '20px',
+                      color: 'green',
+                      marginRight: '5px',
+                    }}
+                  />
+                  <Link to={`/beginner/coding-test/${data.id}`}>
+                    {data.question}
+                  </Link>
+                  <Stars count={data.rate} />
+                </Item>
+              );
+            } else {
+              return (
+                <Item key={data.id}>
+                  <CheckBoxOutlineBlankIcon
+                    style={{
+                      fontSize: '20px',
+                      color: 'dimgrey',
+                      marginRight: '5px',
+                    }}
+                  />
+                  <Link to={`/beginner/coding-test/${data.id}`}>
+                    {data.question}
+                  </Link>
+                  <Stars count={data.rate} />
+                </Item>
+              );
+            }
+          })}
+        </Column>
+      </TitleAccordion>
+    </Column>
   );
 };
 

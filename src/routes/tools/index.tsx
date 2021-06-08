@@ -15,13 +15,13 @@ import BurstModeIcon from '@material-ui/icons/BurstMode';
 import WallpaperIcon from '@material-ui/icons/Wallpaper';
 import TimelineIcon from '@material-ui/icons/Timeline';
 import CodeIcon from '@material-ui/icons/Code';
-import ItemsAccordion from '../../components/accordion/TitleAccordion';
+import TitleAccordion from '../../components/accordion/TitleAccordion';
 import Column from '../../components/box/Column';
 
 const Tools = () => {
   return (
     <Column mt="10px" gap={10}>
-      <ItemsAccordion title="이미지" gap={10}>
+      <TitleAccordion title="이미지" gap={10}>
         <Grid>
           <BarListItem
             title="Unsplash"
@@ -66,9 +66,9 @@ const Tools = () => {
             link="https://svgsprit.es/"
           />
         </Grid>
-      </ItemsAccordion>
+      </TitleAccordion>
 
-      <ItemsAccordion title="영상" gap={10}>
+      <TitleAccordion title="영상" gap={10}>
         <Grid>
           <BarListItem
             title="Pexels"
@@ -77,9 +77,9 @@ const Tools = () => {
             link="https://www.pexels.com/ko-kr/"
           />
         </Grid>
-      </ItemsAccordion>
+      </TitleAccordion>
 
-      <ItemsAccordion title="CSS 예제" gap={10}>
+      <TitleAccordion title="CSS 예제" gap={10}>
         <Grid>
           <BarListItem
             title="Beautiful CSS box-shadow"
@@ -100,9 +100,9 @@ const Tools = () => {
             link="https://css-tricks.com/the-shapes-of-css/"
           />
         </Grid>
-      </ItemsAccordion>
+      </TitleAccordion>
 
-      <ItemsAccordion title="애니메이션" gap={10}>
+      <TitleAccordion title="애니메이션" gap={10}>
         <Grid>
           <BarListItem
             title="Animate.css"
@@ -117,9 +117,9 @@ const Tools = () => {
             link="https://cubic-bezier.com"
           />
         </Grid>
-      </ItemsAccordion>
+      </TitleAccordion>
 
-      <ItemsAccordion title="Validator" gap={10}>
+      <TitleAccordion title="Validator" gap={10}>
         <Grid>
           <BarListItem
             title="HTML Validator"
@@ -134,9 +134,9 @@ const Tools = () => {
             link="https://jigsaw.w3.org/css-validator/"
           />
         </Grid>
-      </ItemsAccordion>
+      </TitleAccordion>
 
-      <ItemsAccordion title="Trend" gap={10}>
+      <TitleAccordion title="Trend" gap={10}>
         <Grid>
           <BarListItem
             title="State of JS"
@@ -151,9 +151,9 @@ const Tools = () => {
             link="https://2020.stateofcss.com/en-US/technologies/css-frameworks/"
           />
         </Grid>
-      </ItemsAccordion>
+      </TitleAccordion>
 
-      <ItemsAccordion title="ETC" gap={10}>
+      <TitleAccordion title="ETC" gap={10}>
         <Grid>
           <BarListItem
             title="Favicon Generator"
@@ -168,7 +168,7 @@ const Tools = () => {
             link="https://dev.w3.org/html5/html-author/charref"
           />
         </Grid>
-      </ItemsAccordion>
+      </TitleAccordion>
     </Column>
   );
 };

@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import CopiableColor from '../../components/button/CopiableColor';
-import PaletteIcon from '@material-ui/icons/Palette';
 import { redColors, blueColors, greyColors } from './colors';
 import { Title, Colors } from './styles';
 import AlertSnackbar from '../../components/snackbar/AlertSnackbar';
