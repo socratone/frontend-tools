@@ -25,6 +25,8 @@ const Nav = () => {
             <HomeIcon style={{ fontSize: '18px' }} />
           </NavItem>
           <NavItem link="/tools">Tools</NavItem>
+          <NavItem link="/flex">Flex</NavItem>
+          <NavItem link="/grid">Grid</NavItem>
           <NavItem link="/beginner/coding-test">Coding Test</NavItem>
           <NavItem link="/palette">Palette</NavItem>
           <NavItem link="https://thinkforthink.tistory.com/">Blog</NavItem>
