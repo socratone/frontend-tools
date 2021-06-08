@@ -46,6 +46,7 @@ const Container = styled.aside`
   width: ${NAV_WIDTH};
   height: 100vh;
   padding: 20px;
+  z-index: 10;
 
   transition: transform 0.3s;
 `;
