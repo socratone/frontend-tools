@@ -24,10 +24,10 @@ const Nav = () => {
           <NavItem link="/">
             <HomeIcon style={{ fontSize: '18px' }} />
           </NavItem>
-          <NavItem link="https://thinkforthink.tistory.com/">Blog</NavItem>
-          <NavItem link="/beginner">Beginner</NavItem>
           <NavItem link="/tools">Tools</NavItem>
+          <NavItem link="/beginner/coding-test">Coding Test</NavItem>
           <NavItem link="/palette">Palette</NavItem>
+          <NavItem link="https://thinkforthink.tistory.com/">Blog</NavItem>
         </LinkList>
         <Box
           display="flex"

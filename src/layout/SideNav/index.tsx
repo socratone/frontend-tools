@@ -27,11 +27,11 @@ const SideNav = ({ onClose }: SideNavProps) => {
           />
         </CloseIconWrap>
         <SideNavItem link="/">홈</SideNavItem>
+        <SideNavItem link="/beginner/coding-test">Coding Test</SideNavItem>
+        <SideNavItem link="/palette">Palette</SideNavItem>
         <SideNavItem link="https://thinkforthink.tistory.com/">
           Blog
         </SideNavItem>
-        <SideNavItem link="/beginner">Beginner</SideNavItem>
-        <SideNavItem link="/palette">Palette</SideNavItem>
       </Container>
     </ClickAwayListener>
   );

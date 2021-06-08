@@ -23,7 +23,7 @@ const Root = () => {
         <p>Frontend 개발자를 위한</p>
         <p>웹 페이지에 들어오신 것을 환영합니다.</p>
       </div>
-      <PrimaryButton onClick={() => history.push('/beginner')}>시작하기</PrimaryButton>
+      <PrimaryButton onClick={() => history.push('/tools')}>시작하기</PrimaryButton>
       <div style={{ height: '50px' }}></div>
     </div>
   );
