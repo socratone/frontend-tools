@@ -76,6 +76,10 @@ div:nth-child(2) {
 
 div:nth-child(3) {
   background: deeppink;
+}
+
+div:nth-child(4) {
+  background: darkorchid;
 }`;
 
 const datas = [
@@ -207,6 +211,7 @@ const datas = [
   <div class="first-child"></div>
   <div class="second-child"></div>    
   <div class="third-child"></div>    
+  <div class="fourth-child"></div>    
 </section>`,
     hiddenCSS: tallParent,
     css: `.parent {
@@ -215,6 +220,10 @@ const datas = [
 }
 
 .first-child {
+  align-self: flex-start;
+}
+
+.fourth-child {
   align-self: flex-end;
 }`,
   },
