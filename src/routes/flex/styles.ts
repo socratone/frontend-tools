@@ -17,15 +17,13 @@ export const Title = styled.h2`
   margin-bottom: 0;
 `;
 
-export const CodeWrap = styled.div`
-  grid-row: span 2;
-
-  @media (max-width: 800px) {
-    grid-row: unset;
-    order: 2;
-  }
-`
+export const CodeWrap = styled.div``
 
 export const ViewerWrap = styled.div`
+  display: flex;
+  flex-direction: column;
 
+  & *:first-child {
+    margin-bottom: 10px;
+  }
 `

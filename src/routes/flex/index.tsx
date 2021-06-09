@@ -9,17 +9,17 @@ const Flex = () => {
     <Column gap={20} mt="10px">
       {datas.map((item, index) => (
         <Item key={index}>
-          <Title>{item.title}</Title>
-          <CodeWrap>
-            <CSSCodeViewer css={item.css} markup={item.markup} />
-          </CodeWrap>
           <ViewerWrap>
+            <Title>{item.title}</Title>
             <CSSViewer
               markup={item.markup}
               hiddenCSS={item.hiddenCSS}
               css={item.css}
             />
           </ViewerWrap>
+          <CodeWrap>
+            <CSSCodeViewer css={item.css} markup={item.markup} />
+          </CodeWrap>
         </Item>
       ))}
     </Column>
