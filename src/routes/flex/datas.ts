@@ -80,7 +80,7 @@ div:nth-child(3) {
 
 const datas = [
   {
-    title: 'justify-content: space-between;',
+    title: 'justify-content: space-between',
     markup: `<section class="parent">
   <div></div>
   <div></div>    
@@ -93,7 +93,7 @@ const datas = [
 }`,
   },
   {
-    title: 'justify-content: space-around;',
+    title: 'justify-content: space-around',
     markup: `<section class="parent">
   <div></div>
   <div></div>    
@@ -106,7 +106,7 @@ const datas = [
 }`,
   },
   {
-    title: 'justify-content: space-evenly;',
+    title: 'justify-content: space-evenly',
     markup: `<section class="parent">
   <div></div>
   <div></div>    
@@ -119,7 +119,7 @@ const datas = [
 }`,
   },
   {
-    title: 'flex-wrap: nowrap; (기본값)',
+    title: 'flex-wrap: nowrap (기본값)',
     markup: `<section class="parent">
   <div></div>
   <div></div>    
@@ -135,7 +135,7 @@ const datas = [
 }`,
   },
   {
-    title: 'flex-wrap: wrap;',
+    title: 'flex-wrap: wrap',
     markup: `<section class="parent">
   <div></div>
   <div></div>    
@@ -151,7 +151,7 @@ const datas = [
 }`,
   },
   {
-    title: 'flex-grow: 0; (기본값)',
+    title: 'flex-grow: 0 (기본값)',
     markup: `<section class="parent">
   <div class="first-child"></div>
   <div class="second-child"></div>    
@@ -175,7 +175,7 @@ const datas = [
 }`,
   },
   {
-    title: 'flex-shrink: 1; (기본값)',
+    title: 'flex-shrink: 1 (기본값)',
     markup: `<section class="parent">
   <div class="first-child"></div>
   <div class="second-child"></div>    
