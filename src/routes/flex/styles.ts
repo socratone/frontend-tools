@@ -11,8 +11,8 @@ export const Item = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
 `;
