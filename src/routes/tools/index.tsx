@@ -15,6 +15,7 @@ import BurstModeIcon from '@material-ui/icons/BurstMode';
 import WallpaperIcon from '@material-ui/icons/Wallpaper';
 import TimelineIcon from '@material-ui/icons/Timeline';
 import CodeIcon from '@material-ui/icons/Code';
+import FormatSizeIcon from '@material-ui/icons/FormatSize';
 import TitleAccordion from '../../components/accordion/TitleAccordion';
 import Column from '../../components/box/Column';
 
@@ -166,6 +167,12 @@ const Tools = () => {
             description="문자 코드"
             icon={<CodeIcon />}
             link="https://dev.w3.org/html5/html-author/charref"
+          />
+          <BarListItem
+            title="Type Scale"
+            description="글자 크기 비율"
+            icon={<FormatSizeIcon />}
+            link="https://type-scale.com/"
           />
         </Grid>
       </TitleAccordion>
