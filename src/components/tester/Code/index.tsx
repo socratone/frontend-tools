@@ -1,15 +1,14 @@
 import styled from 'styled-components';
 
-type CSSCodeViewerProps = {
-  markup: string;
-  css: string;
+type CodeProps = {
+  children: string;
 };
 
-const CSSCodeViewer = ({ markup, css }: CSSCodeViewerProps) => {
+const Code = ({ children }: CodeProps) => {
   return (
     <Container>
       <Pre>
-        <code>{css}</code>
+        <code>{children}</code>
       </Pre>
     </Container>
   );
@@ -29,4 +28,4 @@ const Pre = styled.pre`
   line-height: 20px;
 `;
 
-export default CSSCodeViewer;
+export default Code;
