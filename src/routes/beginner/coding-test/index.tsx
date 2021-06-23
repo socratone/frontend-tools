@@ -24,9 +24,9 @@ const Test = () => {
   }, []);
 
   return (
-    <Column mt="10px" gap={10}>
+    <Column gap={10} mt={10}>
       <TitleAccordion title="기본">
-        <Column gap={10} mt="10px">
+        <Column gap={10} mt={10}>
           {datas.map((data) => {
             if (passeds['test-' + data.id]) {
               return (

@@ -21,7 +21,7 @@ import Column from '../../components/box/Column';
 
 const Tools = () => {
   return (
-    <Column mt="10px" gap={10}>
+    <Column gap={10} mt={10}>
       <TitleAccordion title="이미지" gap={10}>
         <Grid>
           <BarListItem

@@ -47,7 +47,7 @@ const TestId = () => {
 
   return (
     <div>
-      <Column gap={10} mt="10px">
+      <Column gap={10} mt={10}>
         <p>{data.question}</p>
         <Code value={code} onChange={handleCodeChange} />
         <Row gap={10}>

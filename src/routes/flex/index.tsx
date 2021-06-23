@@ -6,7 +6,7 @@ import { CodeWrap, ViewerWrap, Item, Title } from './styles';
 
 const Flex = () => {
   return (
-    <Column gap={20} mt="10px">
+    <Column gap={20} mt={10}>
       {datas.map((item, index) => (
         <Item key={index}>
           <ViewerWrap>
